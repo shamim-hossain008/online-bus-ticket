@@ -9,8 +9,8 @@
       rel="stylesheet"
       type="text/css"
     />
-
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -100,11 +100,12 @@
     <main>
       <section class="hero-section">
         <div
-          class="hero min-h-96"
+          class="hero max-w-screen-2xl mx-auto"
           style="background-image: url(/images/banner.png)"
+          class="object-cover object-center"
         >
           <div class="hero-overlay bg-opacity-0"></div>
-          <div class="hero-content text-center text-neutral-content">
+          <div class="hero-content text-center text-neutral-content round-md">
             <div class="max-w-md">
               <h1 class="mb-5 text-5xl font-bold">
                 End-to-End Travel with <br />
@@ -120,6 +121,52 @@
               <button class="btn bg-[#1CD101]">Buy Ticket</button>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Discount section -->
+      <section>
+        <h1 class="text-center py-8 text-5xl font-bold">Best offers for You</h1>
+        <div class="flex justify-center items-center gap-4">
+          <div>
+            <div class="card w-96 bg-yellow-400 shadow-2xl">
+              <div class="card-body card-side text-center">
+                <div class="p-8">
+                  <h1 class="font-bold text-3xl">15% OFF</h1>
+                  <p class="text-black">on your next purchase</p>
+                  <p class="">use by February</p>
+                </div>
+                <div class="card">
+                  <img class="h-" src="/images/cupon-devider.png" alt="" />
+                </div>
+                <div class="py-16">
+                  <h1 class="font-bold text-2xl">NEW15</h1>
+                  <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd card -->
+          <div>
+            <div class="card w-96 bg-yellow-400 shadow-2xl">
+              <div class="card-body card-side text-center">
+                <div class="p-8">
+                  <h1 class="font-bold text-3xl">15% OFF</h1>
+                  <p class="text-black">on your next purchase</p>
+                  <p class="">use by February</p>
+                </div>
+                <div class="card">
+                  <img src="/images/cupon-devider.png" alt="" />
+                </div>
+                <div class="py-16">
+                  <h1 class="font-bold text-2xl">NEW15</h1>
+                  <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-8">
+          <button class="btn btn-outline btn-accent">See all offers</button>
         </div>
       </section>
     </main>
