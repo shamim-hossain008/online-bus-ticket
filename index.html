@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>S.N Enterprise</title>
+    <title>S.N. Enterprise</title>
     <style>
       .charis-sil-regular {
         font-family: "Charis SIL", serif;
@@ -96,21 +96,20 @@
       </div>
       <!-- nav-bar end -->
     </header>
-
+    <!-- min-h-screen -->
     <main>
       <section class="hero-section">
         <div
-          class="hero max-w-screen-2xl mx-auto"
+          class="hero bg-cover bg-center rounded-2xl max-w-screen-xl mx-auto py-32 bg-gradient-to-b"
           style="background-image: url(/images/banner.png)"
-          class="object-cover object-center"
         >
-          <div class="hero-overlay bg-opacity-0"></div>
+          <div class="hero-overlay bg-opacity-0 bg-cover"></div>
           <div class="hero-content text-center text-neutral-content round-md">
             <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">
-                End-to-End Travel with <br />
+              <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+              <div class="mb-5 text-5xl font-bold">
                 <span class="text-[#1CD101]">S.N Enterprise</span>
-              </h1>
+              </div>
               <p class="mb-5">
                 As we set forth on our individual paths, may we carry with us
                 the spirit of curiosity, courage, and compassion. For in the
@@ -147,10 +146,10 @@
           </div>
           <!-- 2nd card -->
           <div>
-            <div class="card w-96 bg-yellow-400 shadow-2xl">
+            <div class="card w-96 bg-[#F78C9C] shadow-2xl">
               <div class="card-body card-side text-center">
                 <div class="p-8">
-                  <h1 class="font-bold text-3xl">15% OFF</h1>
+                  <h1 class="taitle font-bold text-3xl">15% OFF</h1>
                   <p class="text-black">on your next purchase</p>
                   <p class="">use by February</p>
                 </div>
@@ -167,6 +166,64 @@
         </div>
         <div class="text-center p-8">
           <button class="btn btn-outline btn-accent">See all offers</button>
+        </div>
+      </section>
+      <!-- Information Section -->
+      <section>
+        <div class="border-solid border-green-600 rounded-2xl bg-gray-100 pt-8">
+          <div class="text-center">
+            <h1 class="taitle font-bold text-2xl">S.N. Enterprise</h1>
+            <p>The memories we create and the lives we touch along the way.</p>
+          </div>
+          <div
+            class="flex justify-center gap-8 p-8 bg-base-100 mx-20 rounded-2xl"
+          >
+            <div>
+              <div class="inline-flex gap-2">
+                <img src="/images/bus-logo.png" alt="" />
+                <h1 class="taitle font-bold text-2xl">S.N. Enterprise</h1>
+                <br />
+              </div>
+              <div class="pb-8"><p>Coach-009-WEB! AC_Business</p></div>
+
+              <div class="bg-gray-100 pl-4 rounded-2xl">
+                <div class="inline-flex items-baseline gap-96">
+                  <h3>Route</h3>
+                  <h3>Dhaka - Sylhet</h3>
+                </div>
+                <hr class="p-2" />
+                <div class="inline-flex items-baseline gap-80">
+                  <h4>Departure Time</h4>
+                  <h3>9:00PM</h3>
+                </div>
+                <hr class="p-2" />
+                <div class="inline-flex items-baseline">
+                  <button class="btn btn-wide">
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button class="btn btn-wide">Dropping Point - Bogura</button>
+                  <button class="btn btn-wide">Est. Time - 11 Hour</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-flex items-baseline text-green">
+              <img src="/images/seat-green.png" alt="" />
+              <h6 class="text-[#1CD101]">40</h6>
+              <p class="text-[#1CD101]">Seats left</p>
+            </div>
+
+            <!--  -->
+            <div>
+              <img src="/images/info-devider.png" alt="" />
+            </div>
+            <div class="p-16 pt-40">
+              <img src="/images/fare.png" alt="" />
+              <h3 class="price font-bold text-2xl pt-4">550 Taka</h3>
+
+              <p>Per Seat</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
