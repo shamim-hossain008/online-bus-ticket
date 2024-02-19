@@ -96,7 +96,7 @@
       </div>
       <!-- nav-bar end -->
     </header>
-    <!-- min-h-screen -->
+
     <main>
       <section class="hero-section">
         <div
@@ -125,41 +125,41 @@
       <!-- Discount section -->
       <section>
         <h1 class="text-center py-8 text-5xl font-bold">Best offers for You</h1>
-        <div class="flex justify-center items-center gap-4">
-          <div>
-            <div class="card w-96 bg-yellow-400 shadow-2xl">
-              <div class="card-body card-side text-center">
-                <div class="p-8">
-                  <h1 class="font-bold text-3xl">15% OFF</h1>
-                  <p class="text-black">on your next purchase</p>
-                  <p class="">use by February</p>
-                </div>
-                <div class="card">
-                  <img class="h-" src="/images/cupon-devider.png" alt="" />
-                </div>
-                <div class="py-16">
-                  <h1 class="font-bold text-2xl">NEW15</h1>
-                  <p>Coupon Code</p>
-                </div>
+        <div
+          class="flex justify-between max-w-screen-xl mx-auto items-center gap-4"
+        >
+          <div class="w-1/2 card bg-yellow-400 shadow-2xl">
+            <div class="flex justify-around items-center">
+              <div>
+                <h1 class="font-bold text-3xl">15% OFF</h1>
+                <p class="text-black">on your next purchase</p>
+                <p class="">use by February</p>
+              </div>
+              <div class="card">
+                <img class="h-" src="/images/cupon-devider.png" alt="" />
+              </div>
+              <div class="py-16">
+                <h1 class="font-bold text-2xl">NEW15</h1>
+                <p>Coupon Code</p>
               </div>
             </div>
           </div>
+
           <!-- 2nd card -->
-          <div>
-            <div class="card w-96 bg-[#F78C9C] shadow-2xl">
-              <div class="card-body card-side text-center">
-                <div class="p-8">
-                  <h1 class="taitle font-bold text-3xl">15% OFF</h1>
-                  <p class="text-black">on your next purchase</p>
-                  <p class="">use by February</p>
-                </div>
-                <div class="card">
-                  <img src="/images/cupon-devider.png" alt="" />
-                </div>
-                <div class="py-16">
-                  <h1 class="font-bold text-2xl">NEW15</h1>
-                  <p>Coupon Code</p>
-                </div>
+
+          <div class="w-1/2 card bg-[#F78C9C] shadow-2xl">
+            <div class="flex justify-around items-center">
+              <div>
+                <h1 class="taitle font-bold text-3xl">15% OFF</h1>
+                <p class="text-black">on your next purchase</p>
+                <p class="">use by February</p>
+              </div>
+              <div class="card">
+                <img src="/images/cupon-devider.png" alt="" />
+              </div>
+              <div>
+                <h1 class="font-bold text-2xl">NEW15</h1>
+                <p>Coupon Code</p>
               </div>
             </div>
           </div>
@@ -170,23 +170,30 @@
       </section>
       <!-- Information Section -->
       <section>
-        <div class="border-solid border-green-600 rounded-2xl bg-gray-100 pt-8">
-          <div class="text-center">
-            <h1 class="taitle font-bold text-2xl">S.N. Enterprise</h1>
+        <div
+          class="border-solid border-green-600 rounded-2xl bg-gray-100 pb-16"
+        >
+          <div class="text-center p-16">
+            <h1 class="taitle font-bold text-2xl pb-2">S.N. Enterprise</h1>
             <p>The memories we create and the lives we touch along the way.</p>
           </div>
           <div
-            class="flex justify-center gap-8 p-8 bg-base-100 mx-20 rounded-2xl"
+            class="flex justify-center w- gap-8 bg-base-100 mx-20 rounded-2xl"
           >
             <div>
-              <div class="inline-flex gap-2">
-                <img src="/images/bus-logo.png" alt="" />
-                <h1 class="taitle font-bold text-2xl">S.N. Enterprise</h1>
-                <br />
-              </div>
-              <div class="pb-8"><p>Coach-009-WEB! AC_Business</p></div>
+              <div class="flex gap-2 text-center pt-8">
+                <div>
+                  <img src="/images/bus-logo.png" alt="" />
+                </div>
 
-              <div class="bg-gray-100 pl-4 rounded-2xl">
+                <div class="pb-8">
+                  <h1 class="taitle font-bold text-2xl">S.N. Enterprise</h1>
+
+                  <p class="pt-2">Coach-009-WEB! AC_Business</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-100 pl-16 h-1/2 pt-4 rounded-2xl">
                 <div class="inline-flex items-baseline gap-96">
                   <h3>Route</h3>
                   <h3>Dhaka - Sylhet</h3>
@@ -207,10 +214,13 @@
               </div>
             </div>
 
-            <div class="inline-flex items-baseline text-green">
-              <img src="/images/seat-green.png" alt="" />
-              <h6 class="text-[#1CD101]">40</h6>
-              <p class="text-[#1CD101]">Seats left</p>
+            <div
+              class="flex items-center border-solid bg-green-100 p-4 mt-8 h-12 w-45 rounded-xl"
+            >
+              <div>
+                <img src="/images/seat-green.png" alt="" />
+              </div>
+              <div class="text-[#1CD101]"><p>40 Seats left</p></div>
             </div>
 
             <!--  -->
@@ -219,11 +229,288 @@
             </div>
             <div class="p-16 pt-40">
               <img src="/images/fare.png" alt="" />
-              <h3 class="price font-bold text-2xl pt-4">550 Taka</h3>
-
-              <p>Per Seat</p>
+              <span class="price font-bold text-2xl pt-8"> 550 Taka </span>
+              <h3>Per Seat</h3>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Ticketing Interface -->
+      <section class="bg-gray-100 pb-8">
+        <div class="grid grid-cols-2 gap-4 p-12 bg-base-100 rounded-2xl mx-20">
+          <!-- box 1 -->
+          <div class="bg-base-100 p-8">
+            <h2 class="text-2xl font-bold pb-4">Select Your Seat</h2>
+            <hr />
+
+            <div class="grid grid-cols-2 gap-96 p-4">
+              <div class="flex">
+                <div>
+                  <img src="/images/seat-gray.png" alt="" />
+                </div>
+                <div>Available</div>
+              </div>
+
+              <div class="flex">
+                <div>
+                  <img src="images/seat-green-filled.png" alt="" />
+                </div>
+                <div class="text-green-600">Selected</div>
+              </div>
+            </div>
+            <hr class="p-4" />
+            <div class="inline-flex justify-end">Driver</div>
+
+            <div class="grid grid-cols-5 gap-4 overflow-x-auto p-2">
+              <div class="seat">A</div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                A1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                A2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                A3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                A4
+              </div>
+
+              <div class="seat">B</div>
+
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                B1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                B2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                B3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                B4
+              </div>
+              <div class="seat">C</div>
+
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                C1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                C2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                C3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                C4
+              </div>
+              <div class="seat">D</div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                D1
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                D2
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                D3
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                D4
+              </div>
+
+              <div class="seat">E</div>
+
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                E1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                E2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                E3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                E4
+              </div>
+
+              <div class="seat">F</div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                F1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                F2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                F3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                F4
+              </div>
+
+              <div class="seat">G</div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                G1
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                G2
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                G3
+              </div>
+              <div
+                class="seatcol-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                G4
+              </div>
+
+              <div class="seat">H</div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                H1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                H2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                H3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                H4
+              </div>
+
+              <div class="seat">I</div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                I1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                I2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                I3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                I4
+              </div>
+
+              <div class="seat">J</div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                J1
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                J2
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                J3
+              </div>
+              <div
+                class="seat col-span-1 w-1/2 h-10 bg-gray-100 flex items-center justify-center rounded-xl"
+              >
+                J4
+              </div>
+            </div>
+          </div>
+          <!-- .....Box-2.....  -->
+          <div class="bg-red-600">
+            Box-2
+            <h2 class="text-2xl font-bold">Select Your Seat</h2>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-12 gap-4 overflow-x-auto p-2">
+          <!-- Seat elements -->
+          <div
+            class="col-span-1 w-12 h-12 bg-gray-300 flex items-center justify-center rounded"
+          >
+            1
+          </div>
+          <div
+            class="col-span-1 w-12 h-12 bg-gray-300 flex items-center justify-center rounded"
+          >
+            2
+          </div>
+          <div
+            class="col-span-1 w-12 h-12 bg-gray-300 flex items-center justify-center rounded"
+          >
+            3
+          </div>
+          <!-- Add more seats as needed -->
         </div>
       </section>
     </main>
