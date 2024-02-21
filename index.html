@@ -30,6 +30,8 @@
         font-weight: 700;
         font-style: normal;
       }
+      .seat {
+      }
     </style>
   </head>
   <body>
@@ -136,7 +138,7 @@
                 <p class="">use by February</p>
               </div>
               <div class="card">
-                <img class="h-" src="/images/cupon-devider.png" alt="" />
+                <img src="/images/cupon-devider.png" alt="" />
               </div>
               <div class="py-16">
                 <h1 class="font-bold text-2xl">NEW15</h1>
@@ -220,7 +222,9 @@
               <div>
                 <img src="/images/seat-green.png" alt="" />
               </div>
-              <div class="text-[#1CD101]"><p>40 Seats left</p></div>
+              <div class="text-[#1CD101]">
+                <p><span id="total-seat">40</span> Seats left</p>
+              </div>
             </div>
 
             <!--  -->
@@ -229,7 +233,10 @@
             </div>
             <div class="p-16 pt-40">
               <img src="/images/fare.png" alt="" />
-              <span class="price font-bold text-2xl pt-8"> 550 Taka </span>
+              <h4 class="font-bold text-2xl">
+                <span id="price">550</span>Taka
+              </h4>
+
               <h3>Per Seat</h3>
             </div>
           </div>
@@ -259,225 +266,269 @@
               </div>
             </div>
             <hr class="p-4" />
-            <div class="inline-flex justify-end">Driver</div>
+            <div class="flex justify-end items-center pr-8">
+              <kbd class="kbd p-2 w-20 hover:bg-green-600">
+                <img class="" src="/images/Vector.png" alt=""
+              /></kbd>
+            </div>
 
             <div class="grid grid-cols-5 gap-4 overflow-x-auto p-2">
-              <div class="seat">A</div>
+              <div>A</div>
               <div
+                id="seat-number"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 A1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 A2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 A3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 A4
               </div>
 
-              <div class="seat">B</div>
+              <div>B</div>
 
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 B1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 B2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 B3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 B4
               </div>
-              <div class="seat">C</div>
+              <div>C</div>
 
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 C1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 C2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 C3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 C4
               </div>
-              <div class="seat">D</div>
+              <div>D</div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 D1
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 D2
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 D3
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 D4
               </div>
 
-              <div class="seat">E</div>
+              <div>E</div>
 
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 E1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 E2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 E3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 E4
               </div>
 
-              <div class="seat">F</div>
+              <div>F</div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 F1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 F2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 F3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 F4
               </div>
 
-              <div class="seat">G</div>
+              <div>G</div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 G1
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 G2
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 G3
               </div>
               <div
-                class="seatcol-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
+                id="seat"
+                class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 G4
               </div>
 
-              <div class="seat">H</div>
+              <div>H</div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 H1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 H2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 flex hover:bg-green-600 items-center justify-center rounded-xl"
               >
                 H3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 H4
               </div>
 
-              <div class="seat">I</div>
+              <div>I</div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 I1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 I2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 I3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 I4
               </div>
 
-              <div class="seat">J</div>
+              <div>J</div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 J1
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 J2
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 J3
               </div>
               <div
+                id="seat"
                 class="seat col-span-1 w-4/5 h-12 bg-gray-100 hover:bg-green-600 flex items-center justify-center rounded-xl"
               >
                 J4
@@ -486,32 +537,51 @@
           </div>
           <!-- .....Box-2.....  -->
           <div class="bg-base-100 mx-1/2 p-8">
-            Box-2
             <h2 class="text-2xl font-bold">Select Your Seat</h2>
             <hr />
-            <div class="grid grid-cols-3 gap-4">
-              <div>Seat</div>
-              <div>Class</div>
-              <div>Price</div>
-              <div>C2</div>
-              <div>Economy</div>
-              <div>550</div>
-              <div>C2</div>
-              <div>Economy</div>
-              <div>550</div>
+            <div class="">
+              <div>
+                Seat
+                <span
+                  id="seat-count"
+                  class="text-white rounded-md p-2 bg-green-600 font-bold"
+                  >0</span
+                >
+              </div>
+
+              <div class="overflow-x-auto w-full">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr class="bg-base-200 font-bold text-lg">
+                      <th>Name</th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-container">
+                    <tr>
+                      <!-- <td>A1</td>
+                      <td>Business</td>
+                      <td>550</td> -->
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <hr />
             <div class="flex justify-between font-bold">
               <div>Total Price</div>
-              <div class="pr-40">BDT111</div>
+              <div class="pr-40">BDT <span id="total-price">00</span></div>
             </div>
             <div class="join pt-4">
               <input
-                id="input-field"
+                id="coupon-code"
                 class="input input-bordered join-item w-96"
-                placeholder="Have Any Coupon? "
+                placeholder="Have Any Coupon ? "
               />
               <button
+                onclick="updateGrandTotal('apply-btn')"
                 id="apply-btn"
                 class="btn join-item rounded-md bg-green-600 text-white w-1/4 font-bold"
               >
@@ -520,10 +590,10 @@
             </div>
             <div class="flex justify-between items-center p-4 font-bold">
               <div>Grand Total</div>
-              <div class="pr-40">BDT 110</div>
+              <div class="pr-40">BDT <span id="grandTotal">00</span></div>
             </div>
             <!-- Input -->
-            <div>
+            <div id="ticketForm">
               <form class="space-y-4">
                 <!-- Name input -->
                 <div>
@@ -567,7 +637,7 @@
                 <!-- Submit button -->
                 <button
                   type="submit"
-                  class="w-full bg-green-500 text-white p-3 rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                  class="w-full bg-green-500 text-white font-bold p-3 rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                 >
                   Next
                 </button>
