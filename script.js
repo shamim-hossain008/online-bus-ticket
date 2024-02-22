@@ -16,8 +16,6 @@
 // const totalPrice = document.getElementById("total-price").innerText;
 // const grandTotal = document.getElementById("grandTotal").innerText;
 
-
-
 const allSeats = document.getElementsByClassName("seat"); 
 
 let ticketCount = 0;
@@ -29,15 +27,18 @@ for( const seatBtn of allSeats){
         // const totalTicketPrice = ticket * seatPrice ;
         // const grandPrice = ticket * seatPrice;
 
-        
-
-        const seatName = event.target.innerText;  // seat er name ta ber kora hoyse \\
+        const seatName = event.target.innerText;  // seat er name ta ber kora hoyse
+        console.log(seatName, "seatName")
         const seatPrice = document.getElementById("price").innerText; // seat price ta newa hoyse 
+        // const seat = document.getElementById("seat").innerText;
         
-        event.target.setAttribute("disabled", false);
+        // event.target.setAttribute("disabled", true);
+
+        // document.getElementById("seat").disabled= false;
         event.target.style.backgroundColor= "green";
 
         const fastCardCount = getConvertedValue("seat-count");
+    
         if( fastCardCount +1 > 4){
             alert( "Your limit 4 ticket only");
             return;
@@ -48,14 +49,18 @@ for( const seatBtn of allSeats){
             return;
          }
 
-
         //Seat Left
         const totalSeat = getConvertedValue("total-seat");
         document.getElementById("total-seat").innerText= totalSeat -1 ;
 
         const cartCount = getConvertedValue("seat-count");
+    
         document.getElementById("seat-count").innerText= cartCount +1;
 
+        if(seatName == cartCount){
+            document.getElementById("seat").setAttribute("disabled", true);
+            return
+        }
 
         const className = ("Business");
         const selectedContainer = document.getElementById ("table-container");
@@ -87,16 +92,16 @@ function updateGrandTotal(status){
     const totalPrice = getConvertedValue("total-price");
 
     if(status== undefined){
-    
-        document.getElementById("grandTotal").innerText = totalPrice;
-        
+        document.getElementById("grandTotal").innerText = totalPrice;  
     }
+
     else{
         const couponCode = document.getElementById("coupon-code").value;
         if(couponCode=="NEW15"){
             const discountedPrice = totalPrice * 0.85;
             
-            document.getElementById("grandTotal").innerText = totalPrice - discountedPrice;
+          document.getElementById("grandTotal").innerText = discountedPrice;
+           
         }
         else{
             alert("Please enter valid coupon code")
